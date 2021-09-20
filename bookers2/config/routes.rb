@@ -33,7 +33,7 @@ Rails.application.routes.draw do
   #検索機能
   post '/search' => 'searchs#search', as: 'search'
 
-  #グループ機能です-ーー
+  #グループ機能です-ーー-
   resources :groups do
     resources :group_users, only:[:create,:destroy]
     resources :mails, only:[:new, :create, :show]
